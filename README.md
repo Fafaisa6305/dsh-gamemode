@@ -21,16 +21,16 @@ In DeepSeek Harness, Creative Mode is the built-in `cordis` preset (its `preset.
 ### One-command install
 
 ```bash
-dsh plugin --profile <your-profile> add github:XCNXNXNX/dsh-gamemode
+dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
 ```
 
 Or install the prebuilt release tarball (no build step at all):
 
 ```bash
-dsh plugin --profile <your-profile> add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
 ```
 
-The package declares `dsh.bundle`; `cordis.patch.yml` inserts the plugin row automatically. `lib/` is committed, so the GitHub install needs no pnpm build allowlist. Replace `<your-profile>` with your profile name (e.g. `web`).
+The package declares `dsh.bundle`; `cordis.patch.yml` inserts the plugin row automatically. `lib/` is committed, so the GitHub install needs no pnpm build allowlist. If your profile has another name, replace `web` with it.
 
 ### Usage
 
@@ -72,16 +72,16 @@ DeepSeek Harness 里的“创造模式”就是内置 `cordis` 预设（其 `pre
 ### 一句话安装
 
 ```bash
-dsh plugin --profile <你的 profile> add github:XCNXNXNX/dsh-gamemode
+dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
 ```
 
 或直接安装预构建的 Release tarball（完全不涉及构建）：
 
 ```bash
-dsh plugin --profile <你的 profile> add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
 ```
 
-包已声明 `dsh.bundle`，`cordis.patch.yml` 会自动插入插件行；`lib/` 随仓库分发，因此 GitHub 安装不需要 pnpm 构建授权。把 `<你的 profile>` 换成你的 profile 名（例如 `web`）。
+包已声明 `dsh.bundle`，`cordis.patch.yml` 会自动插入插件行；`lib/` 随仓库分发，因此 GitHub 安装不需要 pnpm 构建授权。如果你的 profile 名不是 `web`，把命令里的 `web` 换成自己的 profile 名。
 
 ### 用法
 
