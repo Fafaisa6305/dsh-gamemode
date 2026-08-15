@@ -1,5 +1,5 @@
 /**
- * @dsh-external/dsh-gamemod — 把 Minecraft 梗命令 `/gamemod 1` 变成
+ * @dsh-external/dsh-gamemod — 把 Minecraft 梗命令 `/gamemode 1` 变成
  * DeepSeek Harness 的“切换到创造模式”命令。
  *
  * 这里的“创造模式”就是 Agent Preset 系统里内置的 `cordis` 预设
@@ -10,7 +10,7 @@
  *   2. 调用 ctx.agentPresets.recompose(agent.ctx, presetId) 重挂 preset；
  *   3. 向会话日志追加 `agent-preset/selected`，保证 resume/fork 时重建同一组合。
  *
- * `/gamemod 0` 对应内置 `standard` 预设（“标准模式”，即 Minecraft 生存模式梗）。
+ * `/gamemode 0` 对应内置 `standard` 预设（“标准模式”，即 Minecraft 生存模式梗）。
  * 命令本身是 log-only 平面，不会让会话脱离 blank 状态。
  */
 import type { Context } from '@deepseek-ai/cordis'
@@ -61,7 +61,7 @@ function parseGameMode(rawInput: string): { mode?: GameMode; recognized: boolean
 }
 
 function usageText(): string {
-  return '用法：/gamemod 1（创造模式，内置 cordis 预设）| /gamemod 0（标准模式）。仅在新会话（还没开始对话）可用。'
+  return '用法：/gamemode 1（创造模式，内置 cordis 预设）| /gamemode 0（标准模式）。仅在新会话（还没开始对话）可用。'
 }
 
 function makeHandler(ctx: Context) {
@@ -108,7 +108,7 @@ function makeHandler(ctx: Context) {
     if (!isBlankSession(invocation)) {
       return {
         kind: 'error',
-        text: `会话已开始，Agent 预设已锁定，不能再切换（与界面预设选择规则一致）。请新建会话，在发第一条消息前使用 /gamemod 1。`,
+        text: `会话已开始，Agent 预设已锁定，不能再切换（与界面预设选择规则一致）。请新建会话，在发第一条消息前使用 /gamemode 1。`,
       }
     }
 
@@ -117,7 +117,7 @@ function makeHandler(ctx: Context) {
       agent.session.append('agent-preset/selected', { agentPreset: switched.id })
       return {
         kind: 'success',
-        text: `已切换到${labelOf(switched)}（预设 id：${switched.id}）。输入 /gamemod 1 成功切换为创造模式。`,
+        text: `已切换到${labelOf(switched)}（预设 id：${switched.id}）。输入 /gamemode 1 成功切换为创造模式。`,
       }
     } catch (error) {
       return {
@@ -131,21 +131,14 @@ function makeHandler(ctx: Context) {
 export function apply(ctx: Context): void {
   ctx.effect(() => {
     const handler = makeHandler(ctx)
-    const disposeGamemod = ctx.commands.register({
-      name: 'gamemod',
-      description: '切换 Agent 预设：/gamemod 1 = 创造模式（cordis），/gamemod 0 = 标准模式',
-      input: { hint: '1 = 创造模式（cordis 预设），0 = 标准模式' },
-      handler,
-    })
     const disposeGamemode = ctx.commands.register({
       name: 'gamemode',
-      description: '/gamemod 的容错别名',
+      description: '切换 Agent 预设：/gamemode 1 = 创造模式（cordis），/gamemode 0 = 标准模式',
       input: { hint: '1 = 创造模式（cordis 预设），0 = 标准模式' },
       handler,
     })
     return () => {
       disposeGamemode()
-      disposeGamemod()
     }
   }, 'dsh-gamemod: preset-switch commands')
 }
