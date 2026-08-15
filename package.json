@@ -6,7 +6,8 @@
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "assets"
   ],
   "license": "BSD-3-Clause",
   "repository": {

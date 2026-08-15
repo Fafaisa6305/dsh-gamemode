@@ -3,6 +3,8 @@
 DSH 插件：`/gamemode 1` = 一键切换到 DeepSeek Harness 内置“创造模式”（`cordis`）Agent 预设。
 DSH plugin: `/gamemode 1` = one-command switch to the built-in Creative Mode (`cordis`) agent preset.
 
+![gamemode showcase](./assets/gamemode.png)
+
 [English](#english) | [中文](#chinese)
 
 ---
@@ -78,3 +80,9 @@ bash scripts/build.sh
 ### 许可证
 
 [BSD-3-Clause](./LICENSE)
+
+---
+
+## 😏 作者调侃 / Author's joke
+
+![Good](./assets/good.png)
