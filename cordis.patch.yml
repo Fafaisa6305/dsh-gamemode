@@ -1,0 +1,5 @@
+# dsh-gamemode bundle layer: insert the slash-command plugin row.
+# Applied by `dsh plugin add @dsh-external/dsh-gamemode` via dsh.bundle.patch.
+- insert:
+    - id: dsh-gamemode
+      name: '@dsh-external/dsh-gamemode'

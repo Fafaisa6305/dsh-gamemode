@@ -18,6 +18,20 @@ In DeepSeek Harness, Creative Mode is the built-in `cordis` preset (its `preset.
 1. `ctx.agentPresets.recompose(agent.ctx, presetId)` — re-links the live agent to the preset's standing mount.
 2. `agent.session.append('agent-preset/selected', { agentPreset })` — records the durable selection so resume/fork rebuilds the same composition.
 
+### One-command install
+
+```bash
+dsh plugin --profile <your-profile> add github:XCNXNXNX/dsh-gamemode
+```
+
+Or install the prebuilt release tarball (no build step at all):
+
+```bash
+dsh plugin --profile <your-profile> add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+```
+
+The package declares `dsh.bundle`; `cordis.patch.yml` inserts the plugin row automatically. `lib/` is committed, so the GitHub install needs no pnpm build allowlist. Replace `<your-profile>` with your profile name (e.g. `web`).
+
 ### Usage
 
 | Command | Effect |
@@ -54,6 +68,20 @@ DeepSeek Harness 里的“创造模式”就是内置 `cordis` 预设（其 `pre
 
 1. `ctx.agentPresets.recompose(agent.ctx, presetId)` — 把当前 live agent 重新挂到目标预设的 standing mount；
 2. `agent.session.append('agent-preset/selected', { agentPreset })` — 落盘持久选择，resume/fork 时能重建同一组合。
+
+### 一句话安装
+
+```bash
+dsh plugin --profile <你的 profile> add github:XCNXNXNX/dsh-gamemode
+```
+
+或直接安装预构建的 Release tarball（完全不涉及构建）：
+
+```bash
+dsh plugin --profile <你的 profile> add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+```
+
+包已声明 `dsh.bundle`，`cordis.patch.yml` 会自动插入插件行；`lib/` 随仓库分发，因此 GitHub 安装不需要 pnpm 构建授权。把 `<你的 profile>` 换成你的 profile 名（例如 `web`）。
 
 ### 用法
 
