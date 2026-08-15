@@ -83,6 +83,4 @@ bash scripts/build.sh
 
 ---
 
-## 😏 作者调侃 / Author's joke
-
 ![Good](./assets/good.png)
