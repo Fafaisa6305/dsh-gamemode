@@ -1,6 +1,6 @@
 {
-  "name": "@dsh-external/dsh-gamemode",
-  "version": "0.0.2",
+  "name": "dsh-gamemode",
+  "version": "0.0.3",
   "description": "DSH 插件：/gamemode 1 = 一键切换到内置创造模式（cordis）预设。DSH plugin: /gamemode 1 = switch to the built-in Creative Mode (cordis) agent preset.",
   "type": "module",
   "main": "./lib/index.js",

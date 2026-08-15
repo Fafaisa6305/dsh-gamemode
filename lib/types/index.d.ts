@@ -1,5 +1,5 @@
 /**
- * @dsh-external/dsh-gamemode — 把 Minecraft 梗命令 `/gamemode 1` 变成
+ * dsh-gamemode — 把 Minecraft 梗命令 `/gamemode 1` 变成
  * DeepSeek Harness 的“切换到创造模式”命令。
  *
  * 这里的“创造模式”就是 Agent Preset 系统里内置的 `cordis` 预设
@@ -14,6 +14,6 @@
  * 命令本身是 log-only 平面，不会让会话脱离 blank 状态。
  */
 import type { Context } from '@deepseek-ai/cordis';
-export declare const name = "@dsh-external/dsh-gamemode";
+export declare const name = "dsh-gamemode";
 export declare const inject: string[];
 export declare function apply(ctx: Context): void;

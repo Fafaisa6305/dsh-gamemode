@@ -21,16 +21,20 @@ In DeepSeek Harness, Creative Mode is the built-in `cordis` preset (its `preset.
 ### One-command install
 
 ```bash
-dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
+dsh plugin --profile web add dsh-gamemode
 ```
 
-Or install the prebuilt release tarball (no build step at all):
+Other install sources:
 
 ```bash
-dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+# straight from GitHub (prebuilt lib/ is committed, no build allowlist needed)
+dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
+
+# or the prebuilt release tarball
+dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.3/dsh-gamemode-0.0.3.tgz
 ```
 
-The package declares `dsh.bundle`; `cordis.patch.yml` inserts the plugin row automatically. `lib/` is committed, so the GitHub install needs no pnpm build allowlist. If your profile has another name, replace `web` with it.
+The package declares `dsh.bundle`; `cordis.patch.yml` inserts the plugin row automatically. If your profile has another name, replace `web` with it.
 
 ### Usage
 
@@ -72,16 +76,20 @@ DeepSeek Harness 里的“创造模式”就是内置 `cordis` 预设（其 `pre
 ### 一句话安装
 
 ```bash
-dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
+dsh plugin --profile web add dsh-gamemode
 ```
 
-或直接安装预构建的 Release tarball（完全不涉及构建）：
+其他安装来源：
 
 ```bash
-dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.2/dsh-external-dsh-gamemode-0.0.2.tgz
+# 直接从 GitHub 安装（已提交预构建 lib/，无需 pnpm 构建授权）
+dsh plugin --profile web add github:XCNXNXNX/dsh-gamemode
+
+# 或使用预构建的 Release tarball
+dsh plugin --profile web add https://github.com/XCNXNXNX/dsh-gamemode/releases/download/v0.0.3/dsh-gamemode-0.0.3.tgz
 ```
 
-包已声明 `dsh.bundle`，`cordis.patch.yml` 会自动插入插件行；`lib/` 随仓库分发，因此 GitHub 安装不需要 pnpm 构建授权。如果你的 profile 名不是 `web`，把命令里的 `web` 换成自己的 profile 名。
+包已声明 `dsh.bundle`，`cordis.patch.yml` 会自动插入插件行。如果你的 profile 名不是 `web`，把命令里的 `web` 换成自己的 profile 名。
 
 ### 用法
 
